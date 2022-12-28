@@ -25,7 +25,7 @@ const sliderControl = (direction) => {
     }
     
     else if (direction === "left") {
-        if (activeIndex-1 > 0) {
+        if (activeIndex-1 >= 0) {
             sliderItemsArray[activeIndex-1].classList.add('slider__item_active')
         }
         else {
